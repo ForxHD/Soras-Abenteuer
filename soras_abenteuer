@@ -1,0 +1,518 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hallo, dein Name ist Sora!");
+		Console.WriteLine("Willkonne in dem kurzen Spiel:\" Soras Abenteuer®\"");
+		Console.WriteLine("Geben sie die Zahl 1 ein zum starten des Spiels");
+		int spielstarten;
+		spielstarten=Convert.ToInt32(Console.ReadLine());
+		if (spielstarten==1)
+		{
+		Console.WriteLine("Das hast du Prima gemacht, jetzt fangen wir an einen Charakter für dich zu erstellen");
+		Characterdesign();
+		}
+		else
+		{
+		Console.WriteLine("Es ist ein Fehler aufgetreten, bitte starten sie das Spiel neu und versuchen sie es nochmal");
+		}
+	}
+	
+	static void Casinogerät()
+    {
+        int budget = 500;
+        Random rand = new Random();
+        int kosten = 1;
+
+        while (true)
+        {
+            Console.WriteLine("Geben Sie 1 zum Spielen und 2 zum Beenden ein");
+            int casinoauswahl = Convert.ToInt32(Console.ReadLine());
+
+            switch (casinoauswahl)
+            {
+                case 1:
+                    budget -= kosten;
+                    int randNum1 = rand.Next(1, 4);
+                    Console.WriteLine("Erste Zahl: " + randNum1);
+                    int randNum2 = rand.Next(1, 4);
+                    Console.WriteLine("Zweite Zahl: " + randNum2);
+                    int randNum3 = rand.Next(1, 4);
+                    Console.WriteLine("Dritte Zahl: " + randNum3);
+
+                    Console.WriteLine("Sie haben nur noch: " + budget + " zur Verfügung");
+
+                    if (randNum1 == randNum2 && randNum3 == randNum1)
+                    {
+                        budget += 5;
+                        Console.WriteLine("Glückwunsch, Sie haben 5€ gewonnen. Sie haben noch " + budget + " zur Verfügung.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Leider eine Niete!");
+                    }
+                    break;
+
+                case 2:
+                    Console.WriteLine("Spiel beendet. Sie haben noch " + budget + " zur Verfügung.");
+                    return; 
+
+                default:
+                    Console.WriteLine("Ungültige Eingabe. Bitte geben Sie 1 zum Spielen oder 2 zum Beenden ein.");
+                    break;
+            }
+        }
+    }
+
+	static void Computer()
+	{	Console.WriteLine("Das hier ist ihr Desktop");
+		Console.WriteLine("____________________________________");
+		Console.WriteLine("|	______						|");
+		Console.WriteLine("|	| 1  |					    |");
+		Console.WriteLine("|	------					    |");
+		Console.WriteLine("|		____					  |");
+		Console.WriteLine("|		| 3 | 		  _____    |");
+		Console.WriteLine("|		----			| 2 |	 |");
+		Console.WriteLine("|						-----	 |");
+		Console.WriteLine("------------------------------------");
+		int apps=Convert.ToInt32(Console.ReadLine());
+		switch(apps)
+		{
+			case 1:
+			Console.WriteLine("Rechner");
+				
+while(true)
+{
+		Console.WriteLine("Willkommen beim einfachen Taschenrechner");
+		Console.WriteLine("-----------------------------------------");
+		Console.WriteLine("bitte geben Sie die erste Zahl ein: ");
+		int zahl1=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Ihre erste Zahl ist:" + zahl1);
+		Console.WriteLine("Bitte geben Sie zweite Zahl ein: ");
+		int zahl2=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Ihre zweite Zahl ist: " + zahl2);
+		Console.WriteLine("Bitte wählen Sie die Operation (+,-,*,/)");
+		string operator2005=Console.ReadLine();
+		Console.WriteLine("Ihr ausgewählte Operator ist: " + operator2005);
+		switch(operator2005)
+		{
+			case "+":
+			int ergebnisplus= zahl1 +zahl2;
+			Console.WriteLine("Das Ergebnis ist: " + ergebnisplus);
+			break;
+				
+			case "-":
+			int ergebnisminus= zahl1 -zahl2;
+			Console.WriteLine("Das Ergebnis ist: " + ergebnisminus);	
+			break;
+				
+			case "*":
+			int ergebnismal= zahl1 *zahl2;
+			Console.WriteLine("Das Ergebnis ist: " + ergebnismal);
+			break;
+				
+			case "/":
+			int ergebnisgeteilt= zahl1 /zahl2;
+			Console.WriteLine("Das Ergebnis ist: " + ergebnisgeteilt);	
+			break;
+			default:
+			Computer();
+			break;	
+			
+		}
+		
+		
+}
+			case 2:
+			Console.WriteLine("System.Shutdown -s -t 2000");
+			break;
+			case 3:
+			Console.WriteLine("Please copy following url and paste it in your browser:https://t1p.de/6ifsb");
+			break;
+			default:
+			Console.WriteLine("error");
+			break;
+		}
+
+	}
+	static void GameOver()
+	{
+	Console.WriteLine("Game Over | Du bist tot |");
+	Console.WriteLine("Starte das Spiel neu, um \n von vorn zu beginnen");
+	Console.WriteLine("🎕Viel Glück beim nächsten mal!🎕");
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//Abgeschlossen
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Passwortsuchen()
+	{
+	Console.WriteLine("Du hast beschlossen dein Passwort zu suchen in deiner Wohnung.");
+	Console.WriteLine("(🍽)Im Wohnzimmer suchen ->1 |(🛏) Im Schlafzimmer suchen ->2 | Schrank durchsuchen -> 3");
+	int suchen=Convert.ToInt32(Console.ReadLine());
+	switch(suchen)
+	{
+		case 1:
+		Console.WriteLine("5->Auf dem Schreibtisch suchen | 6-> In deinen Unterlagen im Schrank suchen | 7-> Neben deinem Monitor suchen");
+		int sucheimwohnzimmer=Convert.ToInt32(Console.ReadLine());
+		switch(sucheimwohnzimmer)
+		{
+			case 5:
+			Console.WriteLine("Du hast hier leider nichts gefunden außer einer Büroklammer");
+			int Büroklammer=0;
+			Büroklammer++;
+			Einfach1();
+			break;
+				
+			case 6:
+			Console.WriteLine("Du hast hier leider nichts gefunden");
+			Einfach1();
+			break;
+				
+			case 8:
+			Console.WriteLine("Du hast hier leider nichts gefunden");
+			Einfach1();
+			break;
+				
+			default:
+			Einfach1();
+			break;
+		}	
+		break;
+			
+		case 2:
+		Console.WriteLine("Du hast leider dein Passwort in deinen Unterlagen im Schrank nicht gefunden");
+		Einfach1();
+		break;
+			
+		case 3:
+		Console.WriteLine("Du hast das Passwort gefunden! Es ist: Valorant2024");
+		Einfach1();
+		break;
+	}
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void EinfachesKapitel1()
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//Weiterführen
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//Weiterführen
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Arbeit()
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	static void Einfach1() //Du hast dir gerade ein Schnitzel gemacht mit Pommes, welche du bisweilen gegessen hast und sitzt jetzt am Esstisch und vor dir steht eine Flasche Whiskey mit einem Glas
+	{
+	Console.WriteLine("Du nimmst mehrere Shotgläser Whiskey und trinkst sie");
+	Console.WriteLine("Nun kannst du entscheiden was du machen willst | 1->Du steigst betrunken in dein Auto ein und fährst zur Tankstelle um dein Auto zu tanken | 2-> Du nimmst die Leine deines Hundes und entscheidest dich mit ihm Gassi zu gehen | 3-> Du gehst an deinen Rechner und startest ihn |");
+	Console.WriteLine("4-> Passwort suchen!");
+	int einfach_auswahl=Convert.ToInt32(Console.ReadLine());
+	switch(einfach_auswahl)
+	{
+			
+		case 4:
+		Passwortsuchen();
+		break;
+			
+		case 1:
+		Console.WriteLine("Das war ein schlechte Entscheidung, da dadurch du betrunken bist nicht deine Geschwindigkeit einschätzen kannst und in die Zapfstation fährst und dein Auto explodiert");
+		GameOver();
+		break;
+			
+		case 2:
+		Console.WriteLine("Während du Gassi gehst bemerkst du ein paar quietschfidele Kinder, die deinen Hund streicheln wollen");
+		Console.WriteLine("Du kannst jetzt entscheiden was du tun sollst:");
+		Console.WriteLine("1->Hund streicheln lassen | 2-> Kindern sagen das sie abhauen sollen | 3->Einen anderen Weg einschlagen als die Kinder");
+		int hundeauswahl=Convert.ToInt32(Console.ReadLine());
+		switch(hundeauswahl)
+		{
+			case 1:
+			Console.WriteLine("Kinder: \"Naaaw sind die süß \" *streicheln Muffin deinen Hund*");
+			//Weiteführen in nächste Methode Kapitel wieterführen
+			break;
+			case 2:
+			Console.WriteLine("Kind im schwarzen Shirt mit Batmanlogo drauf:*schaut eingeschnappt*\"Das ist aber nicht fair!\" *qwq* ");
+			//Weiteführen in nächste Methode Kapitel wieterführen
+			break;
+			case 3:
+			Console.WriteLine("Du hast eine gute Entscheidungen getroffen, da du einen möglichen Konflikt aus dem Weg gegangen bist.");
+			Console.WriteLine("Nun gehst du nach Hause und entscheidest dich wie immer auf die Arbeit zu gehen!");
+			Arbeit();
+			break;	
+		}
+		break;
+			
+		case 3:
+		
+		Console.WriteLine("Geben Sie ihr Passwort ein!");
+		string passwort="Valorant2024";
+		string eingegebenespasswort=Console.ReadLine();
+		if(passwort==eingegebenespasswort)
+		{
+		Computer();
+		}
+		else
+		{
+		Console.WriteLine("Sie haben ein falsches Passwort eingegeben");
+		Einfach1();
+		return;
+		}
+		break;
+			
+		default:
+		Einfach();
+		break;
+		
+	}
+	}
+	
+	static void Einfach2()//Du hast beschlossen, dass du dir dir Wasser am Waschenbecken in dein Gesicht schüttest mit deinen Händen damit du wach wirst
+	{
+	Console.WriteLine("Da du dich jetzt wacher fühlst entscheidest du dich auf die Arbeit zu gehen");
+	Arbeit();
+	}
+	static void zuhause()
+	{
+	Console.WriteLine("Es ist mittlerweile 17 Uhr abends und du beschließt dir mit hilfe eines Rezepts dir etwas zu kochen");
+	Console.WriteLine("Weil du nach dem Essen müde bist, legst du dich hin zum schlafen");
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//Endcredits
+	static void end()
+	{
+	Console.WriteLine("Hier ist das Ende des RPGs. In Zukunft wird das RPG wahrscheinlich weiterprogrammiert.");
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Haus()
+	{
+	Console.WriteLine("Nun entscheidest du dich nach Hause zu gehen mit Muffin");
+	zuhause();
+	}
+	
+	 static void Kapitel_1A() 
+	 {
+	 Console.WriteLine("Du entscheidest dich das Hundespielzeug zu nehmen und nach Hause zu laufen mit deinem Hund");
+	Haus();
+	 }
+	
+	 static void Kapitel_2A() 
+	 {
+	 Console.WriteLine("Muffin fängt das Hundespielzeug und bringt dir es vollgesabbert wieder zurück. Du findest das ein bisschen ekelig, aber bringst dich dennoch dazu es nochmal aufzunehmen und erneut zu werfen");
+		 Haus();
+	 }
+	
+	 static void Kapitel_3A() 
+	 {
+	 Console.WriteLine("Du pfeifst laut um Muffin zu signalisieren, dass er zurück zu dir trotten soll, was er auch macht");
+	 Console.WriteLine("Du streichelst Muffin, weil er ein guter Junge ist und freust dich über ihn");
+	Haus();
+	 }
+	
+	static void Einfach3()
+	{
+	Console.WriteLine("Verfügbare Eingaben: 1=Ins Casino 2=Mit dem Hund rausgehen 3=Laptop öffnen und programmieren beginnen");
+	int nachibu=int.Parse(Console.ReadLine());
+		switch(nachibu)
+		{
+		case 1:
+		Console.WriteLine("Du läufst in das Casino und setzt dich an eine Casinomaschine.");
+		Console.WriteLine("\n 🄲🄰🅂🄸🄽🄾 🄼🄰🄲🄷🄸🄽🄴");
+		Casinogerät();
+		break;
+				
+			case 2:
+			Console.WriteLine("Du hast dich entschlossen mit deinem Hund namens Muffin rauszugehen. Du kannst jetzt aus 3 Optionen wählen wie du vorgehen werden wirst.");
+			Console.WriteLine("1-> Hundespielzeug werfen |2-> Deinen Hund streicheln 3-> Ihn losleinen ");
+			int hundeauswahl=Convert.ToInt32(Console.ReadLine());
+			switch(hundeauswahl)
+			{
+				case 1:
+				Console.WriteLine("🐕Muffin rennt dem Hundespielzeug nach und bringt sein Hundespielzeug dir wieder");
+				Kapitel_1A();
+				break;
+				
+				case 2:
+				Console.WriteLine("Du hast dich entschlossen Muffin zu streicheln und du siehst wie er sich freut. Nun gehst du zu einer Wiese und wirfst das Hundespielzueg in einem parabelförimgen Biegung");
+				Kapitel_2A();
+				break;
+					
+				case 3:
+				Console.WriteLine("Muffin fängt an auf der Wiese rumzurennen 50m entfernt von dir, was für dich kein Problem darstellt");
+				Kapitel_3A();
+				break;
+					
+				default:
+				Einfach();
+				break;
+			
+			}
+			break;
+				
+			case 3:
+			Console.WriteLine("Du hast eine Zeile names Console.WriteLine() geschrieben und kannst jetzt den Text schreiben, welcher ausgeführt werden soll");
+			string consolewriteline=Console.ReadLine();
+			Console.WriteLine(consolewriteline);
+			break;
+				
+			default:
+			Einfach();		
+			break;
+			}
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Storyhellbraun1() //Du hast dir Suppe mit Reis gekocht, genießt deine Suppe am Esstisch. Bevor du aus der Küche gehst, holst du dir eine Flasche Soju und genießt sie
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Storyhellbraun2() //Du hast beschlossen, dass du dir dir Wasser am Waschenbecken in dein Gesicht schüttest mit deinen Händen damit du wach wirst
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Storyhellbraun3()//Dh nimmst eine gekühlte Flasche Cola aus dem Kühlschrank und gießt ein bisschen in ein Glas und trinkst die Cola wodurch du rülpsen musst
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Storyschwarz1() //Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Storyschwarz2()//Du gehst du dem Kübel Wasser auf der anderen Seite deiner Hütte und nimmst ein bisschen Wasser und reibst es auf dein Gesicht
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Storyschwarz3() //"Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur")
+	{
+	end();
+	}
+	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	static void Characterdesign()
+	{
+	Console.WriteLine("Wählen sie die Hautfarbe ihres Charakters(Deine Hautfarbe hat lediglich nur ein Einfluss auf das Sp);");
+	Console.WriteLine("Verfügbare Eingaben: 1=Einfach | 2=Mittel | 3=Schwer");
+	int eingabe=int.Parse(Console.ReadLine());
+	
+	switch(eingabe)
+		{
+		case 1:
+		Console.WriteLine("Sie haben Einfach gewählt");
+		Einfach();
+		break;
+		case 2:
+		Console.WriteLine("Sie haben Mittel gewählt");
+		Hellbraun();
+		break;
+		case 3:
+		Console.WriteLine("Sie haben die Hautfarbe (Schwarz) gewählt");
+		Schwarz();
+		break;
+		default:
+		Console.WriteLine("Ups, da ist etwas schief gelaufen");
+		Characterdesign();
+		break;
+		}
+	}
+	static void Einfach()
+	{
+	Console.WriteLine("Du befindest dich im Badezimmer und fühlst den Kater von dem Saufgelage von gestern und hast jetzt die Entscheidung, was du tun willst!");
+	Console.WriteLine("Wähle eine Option:1-->Dir ein leckeres Schnitzel machen mit Pommes | 2-->Ibuprofen nehmen | 3--> Wasser trinken");
+		int wastun=int.Parse(Console.ReadLine());
+		switch(wastun)
+		{
+		case 1:
+		Console.WriteLine("Du hast dir gerade ein Schnitzel gemacht mit Pommes und sitzt jetzt am Esstisch und vor dir steht eine Flasche Whiskey mit einem Glas");
+		Einfach1();
+		break;
+		
+		case 2:
+		Console.WriteLine("Da du viel wert auf Self care legst, trinkst du eine 0.500ml Flasche Wasser und jetzt machst du dich fertig um raus zu gehen");
+		Einfach2();
+		break;
+				
+		case 3:
+		Console.WriteLine("Du hast dir eine Ibuprofen genommen und schaust jetzt aus dem Fenster deines Apartments raus uns genießt die schöne Aussicht");		
+		Einfach3();
+		break;
+				
+		default:
+		Einfach();
+		break;
+		}
+	}
+
+	static void Hellbraun()
+	{
+	Console.WriteLine("Du befindest dich im Badezimmer und fühlst den Kater von dem Saufgelage von gestern und hast jetzt die Entscheidung, was du tun willst!");
+	Console.WriteLine("Wähle eine Option:1-->Ein Gericht mit weißem Reis zubereiten zum Mittag | 2-->Kaltes Wasser übers Gesicht schütten | 3--> COlanken");
+		int wastun2=int.Parse(Console.ReadLine());
+		switch(wastun2)
+	{
+		case 1:
+		Console.WriteLine("Du hast dir Suppe mit Reis gekocht, genießt deine Suppe am Esstisch. Bevor du aus der Küche gehst, holst du dir eine Flasche Soju und genießt sie");
+		Storyhellbraun1();
+		break;
+				
+		case 2:
+		Console.WriteLine("Du hast beschlossen, dass du dir dir Wasser am Waschenbecken in dein Gesicht schüttest mit deinen Händen damit du wach wirst");
+		Storyhellbraun2();
+		break;
+				
+		case 3:
+		Console.WriteLine("Dh nimmst eine gekühlte Flasche Cola aus dem Kühlschrank und gießt ein bisschen in ein Glas und trinkst die Cola wodurch du rülpsen musst");
+		Storyhellbraun3();
+		break;
+		default:
+		Hellbraun();
+		break;
+	}
+	}
+	
+	static void Schwarz()
+	{
+	Console.WriteLine("Du befindest dich im Badezimmer und fühlst den Kater von dem Saufgelage von gestern und hast jetzt die Entscheidung, was du tun willst!");
+	Console.WriteLine("Wähle eine Option:1-->Ibuprofen | 2-->Kaltes Wasser | 3-->Wasser trinken");
+	int wastun3=int.Parse(Console.ReadLine());
+		switch(wastun3)
+	{
+		case 1:
+		Console.WriteLine("Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur");
+		Storyschwarz1();
+		break;
+		case 2:
+		Console.WriteLine("Du gehst du dem Kübel Wasser auf der anderen Seite deiner Hütte und nimmst ein bisschen Wasser und reibst es auf dein Gesicht.");
+		Storyschwarz2();
+		break;
+		case 3:
+		Console.WriteLine("Du nimmst mit einem  Schöpfer aus dem Kübel Wasser 2 Ladungen in ein aus blechbestehende Tasse, welche an manchen Stellen Dellen hat");
+		Storyschwarz3();
+		break;
+		default:
+		Schwarz();
+		break;	
+			
+		}
+		}
+	 
+}
