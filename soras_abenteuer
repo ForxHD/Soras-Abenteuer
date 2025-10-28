@@ -247,7 +247,7 @@ while(true)
 			//Weiteführen in nächste Methode Kapitel wieterführen
 			break;
 			case 2:
-			Console.WriteLine("Kind im schwarzen Shirt mit Batmanlogo drauf:*schaut eingeschnappt*\"Das ist aber nicht fair!\" *qwq* ");
+			Console.WriteLine("Kind im Schweren Shirt mit Batmanlogo drauf:*schaut eingeschnappt*\"Das ist aber nicht fair!\" *qwq* ");
 			//Weiteführen in nächste Methode Kapitel wieterführen
 			break;
 			case 3:
@@ -378,32 +378,32 @@ while(true)
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	static void Storyhellbraun1() //Du hast dir Suppe mit Reis gekocht, genießt deine Suppe am Esstisch. Bevor du aus der Küche gehst, holst du dir eine Flasche Soju und genießt sie
+	static void StoryMittel1() //Du hast dir Suppe mit Reis gekocht, genießt deine Suppe am Esstisch. Bevor du aus der Küche gehst, holst du dir eine Flasche Soju und genießt sie
 	{
 	end();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	static void Storyhellbraun2() //Du hast beschlossen, dass du dir dir Wasser am Waschenbecken in dein Gesicht schüttest mit deinen Händen damit du wach wirst
+	static void StoryMittel2() //Du hast beschlossen, dass du dir dir Wasser am Waschenbecken in dein Gesicht schüttest mit deinen Händen damit du wach wirst
 	{
 	end();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	static void Storyhellbraun3()//Dh nimmst eine gekühlte Flasche Cola aus dem Kühlschrank und gießt ein bisschen in ein Glas und trinkst die Cola wodurch du rülpsen musst
+	static void StoryMittel3()//Dh nimmst eine gekühlte Flasche Cola aus dem Kühlschrank und gießt ein bisschen in ein Glas und trinkst die Cola wodurch du rülpsen musst
 	{
 	end();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	static void Storyschwarz1() //Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur
+	static void StorySchwer1() //Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur
 	{
 	end();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	static void Storyschwarz2()//Du gehst du dem Kübel Wasser auf der anderen Seite deiner Hütte und nimmst ein bisschen Wasser und reibst es auf dein Gesicht
+	static void StorySchwer2()//Du gehst du dem Kübel Wasser auf der anderen Seite deiner Hütte und nimmst ein bisschen Wasser und reibst es auf dein Gesicht
 	{
 	end();
 	}
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	static void Storyschwarz3() //"Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur")
+	static void StorySchwer3() //"Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur")
 	{
 	end();
 	}
@@ -422,11 +422,11 @@ while(true)
 		break;
 		case 2:
 		Console.WriteLine("Sie haben Mittel gewählt");
-		Hellbraun();
+		Mittel();
 		break;
 		case 3:
-		Console.WriteLine("Sie haben die Hautfarbe (Schwarz) gewählt");
-		Schwarz();
+		Console.WriteLine("Sie haben die Hautfarbe Schwer gewählt");
+		Schwer();
 		break;
 		default:
 		Console.WriteLine("Ups, da ist etwas schief gelaufen");
@@ -462,7 +462,7 @@ while(true)
 		}
 	}
 
-	static void Hellbraun()
+	static void Mittel()
 	{
 	Console.WriteLine("Du befindest dich im Badezimmer und fühlst den Kater von dem Saufgelage von gestern und hast jetzt die Entscheidung, was du tun willst!");
 	Console.WriteLine("Wähle eine Option:1-->Ein Gericht mit weißem Reis zubereiten zum Mittag | 2-->Kaltes Wasser übers Gesicht schütten | 3--> COlanken");
@@ -471,25 +471,25 @@ while(true)
 	{
 		case 1:
 		Console.WriteLine("Du hast dir Suppe mit Reis gekocht, genießt deine Suppe am Esstisch. Bevor du aus der Küche gehst, holst du dir eine Flasche Soju und genießt sie");
-		Storyhellbraun1();
+		StoryMittel1();
 		break;
 				
 		case 2:
 		Console.WriteLine("Du hast beschlossen, dass du dir dir Wasser am Waschenbecken in dein Gesicht schüttest mit deinen Händen damit du wach wirst");
-		Storyhellbraun2();
+		StoryMittel2();
 		break;
 				
 		case 3:
 		Console.WriteLine("Dh nimmst eine gekühlte Flasche Cola aus dem Kühlschrank und gießt ein bisschen in ein Glas und trinkst die Cola wodurch du rülpsen musst");
-		Storyhellbraun3();
+		StoryMittel3();
 		break;
 		default:
-		Hellbraun();
+		Mittel();
 		break;
 	}
 	}
 	
-	static void Schwarz()
+	static void Schwer()
 	{
 	Console.WriteLine("Du befindest dich im Badezimmer und fühlst den Kater von dem Saufgelage von gestern und hast jetzt die Entscheidung, was du tun willst!");
 	Console.WriteLine("Wähle eine Option:1-->Ibuprofen | 2-->Kaltes Wasser | 3-->Wasser trinken");
@@ -498,18 +498,18 @@ while(true)
 	{
 		case 1:
 		Console.WriteLine("Da du Kopfschmerzen hast, nimmst du dir eine Ibuprofen zu dir und trittst aus deinem Rangerhaus und beobachtest die Natur");
-		Storyschwarz1();
+		StorySchwer1();
 		break;
 		case 2:
 		Console.WriteLine("Du gehst du dem Kübel Wasser auf der anderen Seite deiner Hütte und nimmst ein bisschen Wasser und reibst es auf dein Gesicht.");
-		Storyschwarz2();
+		StorySchwer2();
 		break;
 		case 3:
 		Console.WriteLine("Du nimmst mit einem  Schöpfer aus dem Kübel Wasser 2 Ladungen in ein aus blechbestehende Tasse, welche an manchen Stellen Dellen hat");
-		Storyschwarz3();
+		StorySchwer3();
 		break;
 		default:
-		Schwarz();
+		Schwer();
 		break;	
 			
 		}
