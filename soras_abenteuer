@@ -410,7 +410,7 @@ while(true)
 	//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	static void Characterdesign()
 	{
-	Console.WriteLine("Wählen sie die Hautfarbe ihres Charakters(Deine Hautfarbe hat lediglich nur ein Einfluss auf das Sp);");
+	Console.WriteLine("Wählen sie die Schwierigkeit ihres Charakters(Deine Schwierigkeit hat lediglich nur ein Einfluss auf das Spiel).");
 	Console.WriteLine("Verfügbare Eingaben: 1=Einfach | 2=Mittel | 3=Schwer");
 	int eingabe=int.Parse(Console.ReadLine());
 	
@@ -425,7 +425,7 @@ while(true)
 		Mittel();
 		break;
 		case 3:
-		Console.WriteLine("Sie haben die Hautfarbe Schwer gewählt");
+		Console.WriteLine("Sie haben die Schwierigkeit Schwer gewählt");
 		Schwer();
 		break;
 		default:
